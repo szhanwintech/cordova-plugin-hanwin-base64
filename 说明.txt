@@ -1,0 +1,16 @@
+此插件为解决ionic native的camera问题而生的
+
+camera问题：
+    当照相机的数据结果设置为FILE_URI时在页面上不显示，需要转换，ionic nitive提供的File插件会出现转换不成功且无返回结果的问题，所以此插件应运而生，专门用于解决转换问题
+
+此插件用法：
+页面头部定义变量   declare let window: any;
+
+window.plugins.Base64.encodeFile(filePath, imgUrl => {
+//filePath 为filePath提供的路径
+});
+
+
+全套配套用法：
+    参照房屋安全项目（【HSafety_APP】/Users/psy/Desktop/SVN/HSafety_APP ）中， add-partol-record页面
+
